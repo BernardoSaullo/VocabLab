@@ -196,3 +196,8 @@ bower_components/**
 /.vs/UBHaus/v15/Server/sqlite3/storage.ide
 /.vs/UBHaus/v15/Server/sqlite3/storage.ide-shm
 /.vs/UBHaus/v15/Server/sqlite3/storage.ide-wal
+
+#Angular
+
+.angular
+.angular/**
