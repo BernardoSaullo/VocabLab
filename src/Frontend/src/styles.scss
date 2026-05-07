@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+// ─────────────────────────────────────────────
+// Global Styles — VocabLab
+// ─────────────────────────────────────────────
+
+// ── Design Tokens & Layout ────────────────────
+@use 'styles/variables';
+@use 'styles/skeleton';
+
+// ── Google Fonts ──────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "primeicons/primeicons.css";
+
+// ── Base Reset ────────────────────────────────
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ── Root / Body ───────────────────────────────
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md-size);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-lh-lg);
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+}
+
+// ── Typography Utilities ──────────────────────
+h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1-size);
+  font-weight: var(--text-h1-weight);
+  line-height: var(--text-h1-lh);
+  letter-spacing: var(--text-h1-ls);
+  color: var(--color-on-surface);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2-size);
+  font-weight: var(--text-h2-weight);
+  line-height: var(--text-h2-lh);
+  letter-spacing: var(--text-h2-ls);
+  color: var(--color-on-surface);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-h3-size);
+  font-weight: var(--text-h3-weight);
+  line-height: var(--text-h3-lh);
+  color: var(--color-on-surface);
+}
+
+// Financial data: força alinhamento tabular de números
+.data-tabular {
+  font-family: var(--font-body);
+  font-size: var(--text-data-size);
+  font-weight: var(--text-data-weight);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.label-caps {
+  font-family: var(--font-body);
+  font-size: var(--text-label-size);
+  font-weight: var(--text-label-weight);
+  letter-spacing: var(--text-label-ls);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+// ── Semantic Color Utilities ───────────────────
+.text-success { color: var(--color-success); }
+.text-danger  { color: var(--color-danger); }
+.text-primary { color: var(--color-primary); }
+.text-muted   { color: var(--color-on-surface-variant); }
+
+.meu-dropdown {
+  background-color: #F8FAFC;
+
+  .p-select-option {
+    color: #334155;
+    background-color: aquamarine;
+  }
+}
+
