@@ -49,14 +49,13 @@
 
     <div class="words-added">
       @for (word of words; track $index) {
-        <div class="word-added-container">
-          <div class="word-added">
-            <i class="pi pi-circle-on"></i>
-            <p>{{ word }}</p>
+        <div class="word-added">
+          <i class="pi pi-circle-on"></i>
+          <p>{{ word }}</p>
 
-            <button (click)="removeWord($index)" icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" pButton></button>
-          </div>
+          <button (click)="removeWord($index)" icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" pButton></button>
         </div>
+
       }
 
 
