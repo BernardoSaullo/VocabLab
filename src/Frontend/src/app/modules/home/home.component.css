@@ -1,0 +1,120 @@
+.p-iconfield{
+  width: 100%;
+  margin-right: 20px;
+}
+.p-inputtext{
+  padding: 10px;
+  border: var(--border-input);
+  color: var(--color-on-surface);
+  background-color: transparent;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border: var(--border-focus);
+  box-shadow: var(--glow-focus);
+}
+
+.p-inputicon{
+  color: #B8C2D0;
+  font-size: 110%;
+}
+
+.word-input{
+  display: flex;
+
+  .p-button {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 10px 20px;
+    font-size: var(--text-body-sm-size);
+    font-weight: 600;
+    transition: opacity 0.15s ease;
+    padding: 0 30px;
+  }
+
+  .p-button:hover {
+    background-color: var(--color-primary-container);
+    border: none;
+    color: var(--color-on-primary);
+    opacity: 0.85;
+  }
+}
+
+.total-words{
+  display: flex;
+  justify-content: end;
+
+  p{
+    font-size: small;
+    font-weight: bold;
+    color: #6C6F73;
+  }
+}
+
+.words-added{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+.word-added-container{
+
+}
+
+.word-added{
+  background-color: var(--color-surface-container-high);
+  border: var(--border-card);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--radius-default);
+  height: 60px;
+  box-shadow: var(--shadow-modal);
+
+  p{
+    font-weight: bold;
+    font-size: medium;
+    padding: 15px;
+    flex: 1;
+  }
+
+  .p-button {
+    margin-left: auto;
+  }
+
+  i{
+    color: var(--color-primary);
+    font-size: 7px;
+    text-shadow:
+      0 0 4px  rgba(164, 201, 255, 0.9),
+      0 0 10px rgba(164, 201, 255, 0.6),
+      0 0 20px rgba(96,  165, 250, 0.4),
+      0 0 40px rgba(96,  165, 250, 0.15);
+  }
+}
+/* 
+.p-button {
+  background-color: transparent;
+  color: #4B4C4F;
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  font-size: var(--text-body-sm-size);
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+  padding: 15px ;
+  border: 2px dotted #4B4C4F;
+
+  }
+
+  .p-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  opacity: 0.85;
+  } */
