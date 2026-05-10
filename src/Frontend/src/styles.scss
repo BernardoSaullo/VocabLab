@@ -5,6 +5,7 @@
 // ── Design Tokens & Layout ────────────────────
 @use 'styles/variables';
 @use 'styles/skeleton';
+@use 'styles/primeng/p-select.scss';
 
 // ── Google Fonts ──────────────────────────────
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
@@ -83,13 +84,3 @@ h3 {
 .text-danger  { color: var(--color-danger); }
 .text-primary { color: var(--color-primary); }
 .text-muted   { color: var(--color-on-surface-variant); }
-
-.meu-dropdown {
-  background-color: #F8FAFC;
-
-  .p-select-option {
-    color: #334155;
-    background-color: aquamarine;
-  }
-}
-

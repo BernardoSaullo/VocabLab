@@ -1,0 +1,70 @@
+
+.p-select {
+  background-color: transparent !important;
+  border: var(--border-input) !important;
+  border-radius: var(--radius-default);
+  color: var(--color-on-surface);
+  width: 100%;
+
+  .p-select-label {
+    color: var(--color-on-surface);
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.p-select-overlay {
+  background-color: var(--color-surface-container-high);
+  border: var(--border-card) !important;
+  border-radius: var(--radius-default);
+  color: var(--color-on-surface);
+  box-shadow: var(--shadow-modal);
+
+  .p-select-header {
+    background-color: var(--color-surface-container);
+    color: var(--color-on-surface);
+    border-bottom: var(--border-card);
+    border-radius: 4px 4px 0px 0px;
+
+  }
+
+  .p-select-filter {
+    background-color: var(--color-surface-container-low);
+    border: var(--border-input);
+    color: var(--color-on-surface);
+  }
+
+  .p-select-list-container {
+    background-color: var(--color-surface-container-high);
+    border:  var(--border-card);
+  }
+
+  .p-select-list {
+    color: var(--color-on-surface);
+  }
+
+  .p-select-option-group {
+    background-color: var(--color-surface-container);
+    color: var(--color-on-surface-variant);
+  }
+
+  .p-select-option-group-label {
+    color: var(--color-on-surface-variant);
+  }
+
+  .p-select-option {
+    color: var(--color-on-surface);
+  }
+
+  .p-select-option-label {
+    color: var(--color-on-surface);
+  }
+
+  .p-select-option-check-icon,
+  .p-select-option-blank-icon {
+    color: var(--color-on-surface-variant);
+  }
+
+  .p-select-empty-message {
+    color: var(--color-on-surface-variant);
+  }
+}
