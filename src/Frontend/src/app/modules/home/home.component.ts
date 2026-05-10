@@ -1,17 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-export interface Language {
-  name: string;
-  code: string;
-}
 import { BaseContainerComponent } from '../../shared/components/base-container/base-container.component';
 import { IconField } from 'primeng/iconfield';
 import { InputIcon } from 'primeng/inputicon';
 import { InputText } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { SelectModule } from 'primeng/select';
-
+import { Language } from '../../shared/models/language';
+import { Levels } from '../../shared/models/levels';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +20,9 @@ export class HomeComponent {
   words: string[] = [];
 
   languages: Language[] = [];
-  selectedLanguage: Language | undefined;
+  levels: Levels[] = [];
+  inputLanguage: Language | undefined;
+  outputLanguage: Language | undefined;
 
   ngOnInit() {
     this.languages = [
@@ -40,6 +38,7 @@ export class HomeComponent {
       { name: 'Arabic', code: 'ar' },
       { name: 'Korean', code: 'ko' },
     ];
+
   }
 
 
