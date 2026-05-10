@@ -1,11 +1,12 @@
 <app-base-container>
   <h3 card-title>Generation Config</h3>
-
+    <div class="select-languages-container">
+    <label>INPUT LANGUAGE</label>
   <div class="selectd flex justify-center">
-    <p-select styleClass="my"   panelStyleClass="meu-dropdown" [options]="languages" [(ngModel)]="selectedLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+      <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
       <ng-template  #selectedItem let-selectedOption>
         <div class="flex items-center gap-2">
-          <div panelStyleClass="meu-dropdown">{{ selectedOption.name }}</div>
+            <div>{{ selectedOption.name }}</div>
         </div>
       </ng-template>
       <ng-template let-language #item>
@@ -14,9 +15,46 @@
             </div>
         </ng-template>
     </p-select>
+    </div>
 
+    <label>OUTPUT LANGUAGE</label>
+    <div class="selectd flex justify-center">
+      <p-select [options]="languages" [(ngModel)]="outputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+        <ng-template  #selectedItem let-selectedOption>
+          <div class="flex items-center gap-2">
+            <div>{{ selectedOption.name }}</div>
+          </div>
+        </ng-template>
+        <ng-template let-language #item>
+          <div class="flex items-center gap-2">
+                <div class="">{{ language.name }}</div>
+              </div>
+            </ng-template>
+          </p-select>
+        </div>
+    </div>
 
+    <p-selectbutton [options]="levels" [(ngModel)]="selectedlevel" aria-labelledby="basic" />
+
+    <div class="optional-settings-container">
+      <div class="optional-setting">
+        <label>CONTEXT</label>
+        <div class="selectd flex justify-center">
+          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="false" placeholder="Select a Context" />
+        </div>
+      </div>
+
+      <div class="optional-setting">
+        <label>TONE</label>
+        <div class="selectd flex justify-center">
+          <p-select [options]="tones" [(ngModel)]="tone" placeholder="Select Tone"/>
+        </div>
+      </div>
   </div>
+
+    <!-- pi-sparkles -->
+    <button icon="pi pi-sparkles" pButton>Generate</button>
+
 
 </app-base-container>
 

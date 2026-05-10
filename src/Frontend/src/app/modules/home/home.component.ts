@@ -7,11 +7,11 @@ import { InputText } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { SelectModule } from 'primeng/select';
 import { Language } from '../../shared/models/language';
-import { Levels } from '../../shared/models/levels';
+import { SelectButton } from 'primeng/selectbutton';
 
 @Component({
   selector: 'app-home',
-  imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule],
+  imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule, SelectButton],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -20,9 +20,14 @@ export class HomeComponent {
   words: string[] = [];
 
   languages: Language[] = [];
-  levels: Levels[] = [];
+  levels: string[] = [];
+  contexts: string[] = [];
+  tones: string[] = [];
   inputLanguage: Language | undefined;
   outputLanguage: Language | undefined;
+  selectedlevel: string | null = null;
+  context: string | null = null;
+  tone: string | null = null;
 
   ngOnInit() {
     this.languages = [
@@ -38,6 +43,24 @@ export class HomeComponent {
       { name: 'Arabic', code: 'ar' },
       { name: 'Korean', code: 'ko' },
     ];
+
+    this.levels = ['BEGINNER', 'INTERMEDIATE', 'ADVANCED'];
+
+    this.contexts = [
+      'Academic',
+      'Business',
+      'Casual Conversation',
+      'Healthcare',
+      'Legal',
+      'Literature',
+      'Science & Technology',
+      'Travel & Tourism',
+      'Sports & Fitness',
+      'Food & Cooking',
+      'Entertainment & Media'
+    ];
+
+    this.tones = ['Informal', 'Formal'];
 
   }
 
