@@ -1,20 +1,22 @@
-<app-base-container>
-  <h3 card-title>Generation Config</h3>
+<section class="generation-config">
+
+  <app-base-container>
+    <h3 card-title>Generation Config</h3>
     <div class="select-languages-container">
     <label>INPUT LANGUAGE</label>
-  <div class="selectd flex justify-center">
+    <div class="selectd flex justify-center">
       <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
-      <ng-template  #selectedItem let-selectedOption>
-        <div class="flex items-center gap-2">
+        <ng-template  #selectedItem let-selectedOption>
+          <div class="flex items-center gap-2">
             <div>{{ selectedOption.name }}</div>
-        </div>
-      </ng-template>
-      <ng-template let-language #item>
-            <div class="flex items-center gap-2">
-              <div class="">{{ language.name }}</div>
-            </div>
+          </div>
         </ng-template>
-    </p-select>
+        <ng-template let-language #item>
+          <div class="flex items-center gap-2">
+            <div class="">{{ language.name }}</div>
+          </div>
+        </ng-template>
+      </p-select>
     </div>
 
     <label>OUTPUT LANGUAGE</label>
@@ -50,53 +52,54 @@
           <p-select [options]="tones" [(ngModel)]="tone" placeholder="Select Tone"/>
         </div>
       </div>
-  </div>
-
-    <!-- pi-sparkles -->
+    </div>
+    
     <button icon="pi pi-sparkles" pButton>Generate</button>
 
 
-</app-base-container>
+  </app-base-container>
 
 
 
-<app-base-container>
-  <div class="">
-    <div>
+  <app-base-container>
+    <div class="">
+      <div>
 
-    </div>
-    <h3 card-title>Word List Management</h3>
-    <h5 card-sub-title>Add new terminology to your active learning stack.</h5>
-
-
-  </div>
-
-    <div class="word-input">
-      <p-iconfield>
-        <p-inputicon class="pi pi-language"/>
-        <input [(ngModel)]="word" type="text" pInputText placeholder="Enter world or expression" />
-      </p-iconfield>
-
-      <button (click)="addWord()" pButton>Add</button>
-    </div>
-
-
-    <div class="total-words">
-      <p class="">15 TOTAL</p>
-    </div>
-
-    <div class="words-added">
-      @for (word of words; track $index) {
-        <div class="word-added">
-          <i class="pi pi-circle-on"></i>
-          <p>{{ word }}</p>
-
-          <button (click)="removeWord($index)" icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" pButton></button>
-        </div>
-
-      }
+      </div>
+      <h3 card-title>Word List Management</h3>
+      <h5 card-sub-title>Add new terminology to your active learning stack.</h5>
 
 
     </div>
 
-</app-base-container>
+      <div class="word-input">
+        <p-iconfield>
+          <p-inputicon class="pi pi-language"/>
+          <input [(ngModel)]="word" type="text" pInputText placeholder="Enter world or expression" />
+        </p-iconfield>
+
+        <button (click)="addWord()" pButton>Add</button>
+      </div>
+
+
+      <div class="total-words">
+        <p class="">15 TOTAL</p>
+      </div>
+
+      <div class="words-added">
+        @for (word of words; track $index) {
+          <div class="word-added">
+            <i class="pi pi-circle-on"></i>
+            <p>{{ word }}</p>
+
+            <button (click)="removeWord($index)" icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" pButton></button>
+          </div>
+
+        }
+
+
+      </div>
+
+  </app-base-container>
+
+</section>

@@ -1,3 +1,7 @@
+.generation-config{
+  display: flex;
+}
+
 .p-iconfield{
   width: 100%;
   margin-right: 20px;
@@ -63,8 +67,6 @@
 
 
 }
-
-
 
 .word-added{
   background-color: var(--color-surface-container-high);
