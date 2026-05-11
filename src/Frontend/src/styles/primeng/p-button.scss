@@ -1,0 +1,18 @@
+.p-button {
+  background-color: var(--color-primary) !important;
+  color: var(--color-on-primary) !important;
+  border: none;
+  border-radius: var(--radius-md) !important;
+  font-size: var(--text-body-sm-size);
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+  padding: 0 30px;
+}
+
+.p-button:hover {
+  background-color: var(--color-primary-container);
+  border: none;
+  color: var(--color-on-primary);
+  opacity: 0.85;
+}
+
