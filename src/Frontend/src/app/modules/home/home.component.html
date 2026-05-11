@@ -84,14 +84,14 @@
       <div class="optional-setting">
         <label>CONTEXT</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="false" placeholder="Select a Context" />
+          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="true" placeholder="Select a Context" />
         </div>
       </div>
 
       <div class="optional-setting">
         <label>TONE</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="tones" [(ngModel)]="tone" placeholder="Select Tone"/>
+          <p-select [options]="tones" [(ngModel)]="tone" [showClear]="true" placeholder="Select Tone"/>
         </div>
       </div>
     </div>
