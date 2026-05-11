@@ -30,22 +30,9 @@
   display: flex;
 
   .p-button {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
-    border: none;
-    border-radius: var(--radius-md);
-    padding: 10px 20px;
-    font-size: var(--text-body-sm-size);
     font-weight: 600;
     transition: opacity 0.15s ease;
     padding: 0 30px;
-  }
-
-  .p-button:hover {
-    background-color: var(--color-primary-container);
-    border: none;
-    color: var(--color-on-primary);
-    opacity: 0.85;
   }
 }
 
