@@ -1,5 +1,6 @@
 .generation-config{
   display: flex;
+  gap: 30px;
 }
 
 .p-iconfield{
@@ -96,7 +97,13 @@
 
 .optional-settings-container{
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
+  box-sizing: content-box;
+}
+
+.optional-settings-container > * {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 label{
