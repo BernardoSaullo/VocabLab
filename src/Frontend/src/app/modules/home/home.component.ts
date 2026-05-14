@@ -13,7 +13,7 @@ import { SelectButton } from 'primeng/selectbutton';
   selector: 'app-home',
   imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule, SelectButton],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   word: string = '';

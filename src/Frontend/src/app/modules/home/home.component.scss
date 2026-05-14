@@ -1,6 +1,14 @@
-.generation-config{
+.generation-layout{
   display: flex;
   gap: 30px;
+}
+
+.word-list-management{
+  flex: 3
+}
+
+.generation-config-panel{
+  flex: 2
 }
 
 .p-iconfield{
