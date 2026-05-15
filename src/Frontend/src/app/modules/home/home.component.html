@@ -78,7 +78,7 @@
             <i class="pi pi-circle-on"></i>
             <p>{{ word }}</p>
 
-            <button (click)="removeWord($index)" icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" pButton></button>
+            <button (click)="removeWord($index)" icon="pi pi-trash" [rounded]="true" [text]="true" severity="danger" pButton></button>
           </div>
 
         }
@@ -149,5 +149,17 @@
   </app-base-container>
 </section>
 
+<section class="recently-deck">
+
+   <app-base-card
+    iconField="pi-book"
+    [icon_bg]="true"
+    mainText="42"
+    mainTextSize="large"
+    secondText="Words Added">
+    <div class="card-label">TARGET: 50</div>
+  </app-base-card>
+
+</section>
 
 </div>
