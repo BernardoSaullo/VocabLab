@@ -1,0 +1,10 @@
+<app-base-container>
+	<div [class]="icon_bg ? 'icon_bg': 'none'">
+    <i [class]="'pi ' + iconField"></i>
+  </div>
+
+  <div class="text-container">
+    <h1 [class]="mainTextSize">{{ mainText }}</h1>
+    <h2 class="secondText">{{ secondText }}</h2>
+  </div>
+</app-base-container>
