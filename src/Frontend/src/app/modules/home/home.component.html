@@ -1,3 +1,43 @@
+<section class="statistics">
+  <app-base-card
+    iconField="pi-book"
+    [icon_bg]="true"
+    mainText="42"
+    mainTextSize="large"
+    secondText="Words Added">
+    <div class="card-label">TARGET: 50</div>
+  </app-base-card>
+
+  <app-base-card
+    iconField="pi-file-import"
+    [icon_bg]="true"
+    mainText="128"
+    mainTextSize="large"
+    secondText="Cards Generated">
+    <div class="card-label">TOTAL</div>
+  </app-base-card>
+
+  <app-base-card
+    iconField="pi-bolt"
+    [icon_bg]="true"
+    mainText="75%"
+    mainTextSize="large"
+    secondText="">
+    <div class="card-label">+5% today</div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" style="width: 75%"></div>
+    </div>
+  </app-base-card>
+
+  <app-base-card
+    iconField="pi-history"
+    [icon_bg]="true"
+    mainText="2h"
+    mainTextSize="large"
+    secondText="Since Last Session">
+  </app-base-card>
+</section>
+
 <section class="generation-layout">
 
   <app-base-container class="word-list-management">

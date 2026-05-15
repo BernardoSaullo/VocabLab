@@ -3,6 +3,18 @@
   gap: 30px;
 }
 
+.statistics{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  app-base-card {
+    flex: 1;
+    min-width: 0;
+    margin: 10px;
+  }
+}
+
 .word-list-management{
   flex: 3
 }

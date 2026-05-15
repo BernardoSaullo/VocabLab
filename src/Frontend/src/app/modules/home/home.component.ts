@@ -8,10 +8,11 @@ import { ButtonModule } from 'primeng/button';
 import { SelectModule } from 'primeng/select';
 import { Language } from '../../shared/models/language';
 import { SelectButton } from 'primeng/selectbutton';
+import { BaseCardComponent } from "../../shared/components/base-card/base-card.component";
 
 @Component({
   selector: 'app-home',
-  imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule, SelectButton],
+  imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule, SelectButton, BaseCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
