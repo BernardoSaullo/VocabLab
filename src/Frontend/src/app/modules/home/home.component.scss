@@ -1,5 +1,5 @@
 .dashboard-intro{
-  margin: 50px 0px;
+  margin: 38px 0px;
 
   p{
     margin-top: 10px;
@@ -15,7 +15,8 @@
 .statistics{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
+  margin-bottom: 28px;
 
   app-base-card {
     flex: 1;
