@@ -1,4 +1,11 @@
+.dashboard-intro{
+  margin: 50px 0px;
 
+  p{
+    margin-top: 10px;
+    color: var(--color-on-secondary-text);
+  }
+}
 
 .generation-layout{
   display: flex;
