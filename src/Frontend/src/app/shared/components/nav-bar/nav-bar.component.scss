@@ -1,0 +1,67 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: transparent;
+  border-bottom: 1px solid #272A30;
+  padding: 10px;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+
+  .company-name{
+    font-size: var(--text-h3size);
+    font-weight: var(--text-h3-weight);
+  }
+}
+
+
+.pages{
+  margin-left: 20px;
+  .link-page{
+    text-decoration: none;
+    color: var(--color-on-secondary-text);
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .link-page:hover{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+}
+
+.tool-section{
+  display: flex;
+  align-items: center;
+
+  .notifications{
+    display: flex;
+    font-size: large;
+    align-items: inherit;
+    margin-right: 20px;
+  }
+  .notifications:hover{
+    cursor: pointer;
+  }
+  
+  .profile{
+    display: flex;
+    align-items: inherit;
+    margin-right: 10px;
+    .user-name{
+      margin-right: 5px;
+      color: var(--color-on-secondary-text);
+      font-size: 0.7rem;
+    }
+  
+    .avatar{
+      background-color: #272A30;
+      color: white;
+    }
+  
+  }
+}
