@@ -14,6 +14,7 @@
 .generation-layout{
   display: flex;
   gap: 30px;
+  height: 50vh;
 }
 
 .statistics{
@@ -86,7 +87,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 
 }
 
@@ -98,6 +102,7 @@
   padding: 10px;
   border-radius: var(--radius-default);
   height: 60px;
+  flex: 0 0 60px;
   box-shadow: var(--shadow-modal);
 
   p{
