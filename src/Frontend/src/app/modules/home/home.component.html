@@ -94,7 +94,7 @@
     <div class="select-languages-container">
     <label>INPUT LANGUAGE</label>
     <div class="selectd flex justify-center">
-      <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+      <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language" appendTo="body">
         <ng-template  #selectedItem let-selectedOption>
           <div class="flex items-center gap-2">
             <div>{{ selectedOption.name }}</div>
@@ -110,7 +110,7 @@
 
     <label>OUTPUT LANGUAGE</label>
     <div class="selectd flex justify-center">
-      <p-select [options]="languages" [(ngModel)]="outputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+      <p-select [options]="languages" [(ngModel)]="outputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language" appendTo="body">
         <ng-template  #selectedItem let-selectedOption>
           <div class="flex items-center gap-2">
             <div>{{ selectedOption.name }}</div>
@@ -131,14 +131,14 @@
       <div class="optional-setting">
         <label>CONTEXT</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="true" placeholder="Select a Context" />
+          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="true" placeholder="Select a Context" appendTo="body" />
         </div>
       </div>
 
       <div class="optional-setting">
         <label>TONE</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="tones" [(ngModel)]="tone" [showClear]="true" placeholder="Select Tone"/>
+          <p-select [options]="tones" [(ngModel)]="tone" [showClear]="true" placeholder="Select Tone" appendTo="body"/>
         </div>
       </div>
     </div>
