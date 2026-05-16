@@ -1,0 +1,14 @@
+.p-inputtext{
+  padding: 10px;
+  border: var(--border-input) !important;
+  color: var(--color-on-surface) !important;
+  background-color: transparent !important;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border: var(--border-focus) !important;
+  box-shadow: var(--glow-focus);
+}
