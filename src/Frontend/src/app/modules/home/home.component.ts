@@ -12,7 +12,17 @@ import { BaseCardComponent } from "../../shared/components/base-card/base-card.c
 
 @Component({
   selector: 'app-home',
-  imports: [BaseContainerComponent, IconField, InputIcon, InputText, ButtonModule, FormsModule, SelectModule, SelectButton, BaseCardComponent],
+  imports: [
+    BaseContainerComponent,
+    IconField,
+    InputIcon,
+    InputText,
+    ButtonModule,
+    FormsModule,
+    SelectModule,
+    SelectButton,
+    BaseCardComponent
+      ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
