@@ -5,77 +5,73 @@
   min-height: 100dvh;
 }
 
-.main-container {
-  
-  .logo-container{
+.sign-in-page {
+  .brand-block {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .sign-container{
+  .sign-in-card {
     background-color: var(--color-surface-container);
     border-radius: var(--radius-default);
     padding: 40px;
     margin-top: 38px;
     border: var(--border-card);
 
-    .header{
+    .sign-in-header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      h1{
+
+      h1 {
         font-size: var(--text-h1-size);
-        font-weight: lighter;      
-        }
-      p{
+        font-weight: lighter;
+      }
+
+      p {
         color: #ACB1BC;
         font-size: 15px;
       }
     }
 
-    .credential-container{
+    .sign-in-form {
       display: flex;
       flex-direction: column;
       gap: 24px;
       margin-top: 30px;
       
-      .credential{
+      .form-field {
         display: flex;
         flex-direction: column;
         gap: 7px;
         font-weight: 600;
         font-size: small;
-                       
 
-        .password-label{
+        .form-field-header {
           display: flex;
           justify-content: space-between;
-          a{
+
+          a {
             color: var(--color-surface-tint);
             text-decoration: none;
           }
-          a:hover{
+
+          a:hover {
             color: white;
             text-decoration: none;
           }
         }
-
-        
       }
 
-      .p-button{
+      .p-button {
         width: 100% !important;
-      }      
+      }
     }
-  }
-  
-  .credential {
-    display: block;
   }
 }
 
-.sign-container {
+.sign-in-card {
   width: min(100%, 420px);
 }
 
@@ -102,34 +98,34 @@
   }
 }
 
-.social-auth {
+.social-login {
   margin-top: 18px;
 
-  .google-auth-btn {
+  .social-login-google {
     width: 100%;
   }
 }
 
-.signup-prompt{
+.register-prompt {
   display: flex;
   justify-content: center;
   font-size: small;
   margin-top: 20px;
 
-  span{
+  span {
     color: #ACB1BC;
     margin-right: 6px;
   }
 
-    a {
-      color: var(--color-surface-tint);
-      text-decoration: none;
-      font-weight: bold;
-    }
+  a {
+    color: var(--color-surface-tint);
+    text-decoration: none;
+    font-weight: bold;
+  }
   
-    a:hover {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    }
+  a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
