@@ -13,6 +13,7 @@
   }
 
   .sign-in-card {
+    width: min(100%, 420px);
     background-color: var(--color-surface-container);
     border-radius: var(--radius-default);
     padding: 40px;
@@ -68,64 +69,60 @@
         width: 100% !important;
       }
     }
-  }
-}
 
-.sign-in-card {
-  width: min(100%, 420px);
-}
+    .auth-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      margin-top: 28px;
 
-.auth-divider{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  margin-top: 28px;
+      hr {
+        flex: 1;
+        border: 0;
+        border-top: 1px solid var(--color-outline-variant);
+        opacity: 0.8;
+      }
 
-  hr {
-    flex: 1;
-    border: 0;
-    border-top: 1px solid var(--color-outline-variant);
-    opacity: 0.8;
-  }
+      span {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        color: var(--secondary-font-color);
+        white-space: nowrap;
+      }
+    }
 
-  span {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    color: var(--secondary-font-color);
-    white-space: nowrap;
-  }
-}
+    .social-login {
+      margin-top: 18px;
 
-.social-login {
-  margin-top: 18px;
-
-  .social-login-google {
-    width: 100%;
-  }
-}
-
-.register-prompt {
-  display: flex;
-  justify-content: center;
-  font-size: small;
-  margin-top: 20px;
-
-  span {
-    color: #ACB1BC;
-    margin-right: 6px;
+      .social-login-google {
+        width: 100%;
+      }
+    }
   }
 
-  a {
-    color: var(--color-surface-tint);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  .register-prompt {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    margin-top: 20px;
+
+    span {
+      color: #ACB1BC;
+      margin-right: 6px;
+    }
+
+    a {
+      color: var(--color-surface-tint);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 }
