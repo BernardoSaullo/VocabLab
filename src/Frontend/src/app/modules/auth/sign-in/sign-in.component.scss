@@ -13,12 +13,8 @@
   }
 
   .sign-in-card {
-    width: min(100%, 420px);
-    background-color: var(--color-surface-container);
-    border-radius: var(--radius-default);
     padding: 40px;
     margin-top: 38px;
-    border: var(--border-card);
 
     .sign-in-header {
       display: flex;
