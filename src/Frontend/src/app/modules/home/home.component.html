@@ -1,11 +1,11 @@
-<div class="content">
+<main class="home-page">
 
-  <section class="dashboard-intro">
+  <section class="home-intro">
     <h1>Study Section</h1>
   <p>Welcome back. Alex. Your Spanish A1 path is currently at 75%. You're 12 cards away from your daily goal.</p>
 </section>
 
-<section class="statistics">
+<section class="stats-overview">
   <app-base-card
     iconField="pi-book"
     [icon_bg]="true"
@@ -45,20 +45,16 @@
   </app-base-card>
 </section>
 
-<section class="generation-layout">
+<section class="generator-layout">
 
-  <app-base-container class="word-list-management">
-    <div class="">
-      <div>
-
-      </div>
+  <app-base-container class="word-list-panel">
+    <header>
       <h3 card-title>Word List Management</h3>
       <h5 card-sub-title>Add new terminology to your active learning stack.</h5>
 
+    </header>
 
-    </div>
-
-      <div class="word-input">
+      <div class="word-entry">
         <p-iconfield>
           <p-inputicon class="pi pi-language"/>
           <input [(ngModel)]="word" type="text" pInputText placeholder="Enter world or expression" />
@@ -68,13 +64,13 @@
       </div>
 
 
-      <div class="total-words">
+      <div class="word-count">
         <p class="">{{ words.length}} TOTAL</p>
       </div>
 
-      <div class="words-added">
+      <div class="word-list">
         @for (word of words; track $index) {
-          <div class="word-added">
+          <div class="word-list-item">
             <i class="pi pi-circle-on"></i>
             <p>{{ word }}</p>
 
@@ -89,12 +85,12 @@
   </app-base-container>
 
 
-  <app-base-container class="generation-config-panel">
+  <app-base-container class="config-panel">
     <h3 card-title>Generation Config</h3>
-    <div class="select-languages-container">
+    <div class="language-select-group">
     <label>INPUT LANGUAGE</label>
     <div class="selectd flex justify-center">
-      <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+      <p-select [options]="languages" [(ngModel)]="inputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language" appendTo="body">
         <ng-template  #selectedItem let-selectedOption>
           <div class="flex items-center gap-2">
             <div>{{ selectedOption.name }}</div>
@@ -110,7 +106,7 @@
 
     <label>OUTPUT LANGUAGE</label>
     <div class="selectd flex justify-center">
-      <p-select [options]="languages" [(ngModel)]="outputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language">
+      <p-select [options]="languages" [(ngModel)]="outputLanguage" optionLabel="name" [filter]="true" filterBy="name" [showClear]="false" placeholder="Select a Language" appendTo="body">
         <ng-template  #selectedItem let-selectedOption>
           <div class="flex items-center gap-2">
             <div>{{ selectedOption.name }}</div>
@@ -127,18 +123,18 @@
 
     <p-selectbutton [options]="levels" [(ngModel)]="selectedlevel" aria-labelledby="basic" />
 
-    <div class="optional-settings-container">
-      <div class="optional-setting">
+    <div class="advanced-settings">
+      <div class="advanced-setting">
         <label>CONTEXT</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="true" placeholder="Select a Context" />
+          <p-select [options]="contexts" [(ngModel)]="context" [filter]="true" [showClear]="true" placeholder="Select a Context" appendTo="body" />
         </div>
       </div>
 
-      <div class="optional-setting">
+      <div class="advanced-setting">
         <label>TONE</label>
         <div class="selectd flex justify-center">
-          <p-select [options]="tones" [(ngModel)]="tone" [showClear]="true" placeholder="Select Tone"/>
+          <p-select [options]="tones" [(ngModel)]="tone" [showClear]="true" placeholder="Select Tone" appendTo="body"/>
         </div>
       </div>
     </div>
@@ -150,4 +146,4 @@
 </section>
 
 
-</div>
+</main>
