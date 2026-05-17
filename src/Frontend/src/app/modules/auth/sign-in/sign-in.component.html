@@ -1,0 +1,43 @@
+<div class="main-container">
+  <div class="logo-container">
+    <app-logo></app-logo>
+  </div>
+
+  <div class="sign-container">
+    <div class="header">
+      <h1>Welcome back</h1>
+      <p>Enter your credentials to access your dashboard</p>
+    </div>
+
+    <div class="credential-container">
+      <div class="credential">
+        <label for="email">E-mail</label>
+        <input pInputText type="text" placeholder="name@example.com" [(ngModel)]="email" />
+      </div>
+
+      <div class="credential">
+        <div class="password-label">
+          <label for="password">Password</label>
+          <a href="">FORGOT?</a>
+        </div>
+        <p-password [(ngModel)]="password" [toggleMask]="true" placeholder="password"/>
+      </div>
+
+      <button pButton>Sign In</button>
+    </div>
+
+    <div class="auth-divider">
+      <hr>
+      <span>OR CONTINUE WITH</span>
+      <hr>
+    </div>
+
+    <div class="social-auth">
+      <button pButton type="button" class="google-auth-btn" icon="pi pi-google" label="Continue with Google"></button>
+    </div>
+  </div>
+
+  <div class="signup-prompt">
+    <span class="">Don't have an account?</span> <a href="">Create one</a>
+  </div>
+</div>
