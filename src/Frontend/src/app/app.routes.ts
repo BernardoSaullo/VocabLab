@@ -5,6 +5,7 @@ import { InputIconComponent } from './shared/components/inputs/input-icon/input-
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { SignInComponent } from './modules/auth/sign-in/sign-in.component';
 import { SignUpComponent } from './modules/auth/sign-up/sign-up.component';
+import { ResetPasswordComponent } from './modules/auth/reset-password/reset-password.component';
 
 export const routes: Routes = [
 
@@ -16,4 +17,5 @@ export const routes: Routes = [
 	{ path: 'test-component', component: InputIconComponent },
 	{ path: 'sign-in', component: SignInComponent },
 	{ path: 'sign-up', component: SignUpComponent },
+	{ path: 'reset-password', component: ResetPasswordComponent },
 ];
