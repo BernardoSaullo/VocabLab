@@ -1,4 +1,6 @@
 .p-selectbutton{
+  display: flex;
+  justify-content: space-between;
   gap: 8px;
   border: var(--border-input);
   // width: auto;
@@ -10,7 +12,7 @@
     font-size: small;
     font-weight: bold;
     border-radius: var(--radius-default) !important;
-
+    width: 100%;
     &:hover{
       background-color: white!important;
     }
