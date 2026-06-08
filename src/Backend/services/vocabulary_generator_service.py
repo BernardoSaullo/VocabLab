@@ -18,7 +18,6 @@ class VocabularyGeneratorService:
             },
         )
         api_key=os.environ.get("GROQ_API_KEY")
-        print(api_key)
 
         client = AsyncGroq(
             api_key=os.environ.get("GROQ_API_KEY"),
@@ -52,11 +51,12 @@ class VocabularyGeneratorService:
             stream=False,
         )
         data = chat_completion.choices[0].message.content
+        
         array_match = re.search(r'\[\s*{.*?}\s*]', data, re.DOTALL)
 
         
         if array_match:
-            print(json.loads(array_match.group()))
-            return
+            return json.loads(array_match.group())
+            
         
             
