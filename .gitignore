@@ -201,3 +201,9 @@ bower_components/**
 
 .angular
 .angular/**
+
+# Environment variables
+.env
+
+
+__pycache__/
